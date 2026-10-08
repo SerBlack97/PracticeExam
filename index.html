@@ -7,9 +7,36 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div id="orderBox">
+        <div id="nameBox">
+            <h2>Your Name:</h2>
+            <input id="userName" type="text" placeholder="Name">
+        </div>
+
+        <div id="itemMenu">
+            <label for="content">
+                <h2>Item:</h2>
+            </label>
+                <select id="content">
+                    <option value="4.5">Latte - $4.50</option>
+                    <option value="10">Lemon - $10</option>
+                    <option value="3.5">Hotdog - $3.50</option>
+                    <option value="5.5">Corndog - $5.50</option>
+                </select>        
+        </div>
+
+        <div id="quantityBox">
+            <label for="quantity">           
+                <h2>Quantity:</h2>
+            </label>
+            <input id="quantityNum" type="number" placeholder="0">
+        </div>
+
+        <button onclick="totalOrder()">Order Now</button>
+        <p>Thanks! Your total is $<span id="result">0</span></p>
+    </div>
 
 
-    
     <script src="js/apps.js"></script>
 </body>
 </html>
